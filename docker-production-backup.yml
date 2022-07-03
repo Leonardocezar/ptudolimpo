@@ -1,0 +1,27 @@
+version: "3"
+services:
+  web:
+    labels:
+      - traefik.enable=true
+      - traefik.frontend.rule=Host:www.tudolimpoanchieta.com.br
+  backend:
+    labels:
+      - traefik.enable=true
+      - traefik.frontend.rule=Host:api.tudolimpoanchieta.com.br
+  frontend:
+    labels:
+      - traefik.enable=true
+      - traefik.frontend.rule=Host:app.tudolimpoanchieta.com.br
+  booking:
+    labels:
+      - traefik.enable=true
+      - traefik.frontend.rule=Host:agendamento.tudolimpoanchieta.com.br
+  reverse-proxy:
+    image: traefik:alpine
+    command: --api --docker.exposedbydefault=false
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /docker/traefik:/etc/traefik

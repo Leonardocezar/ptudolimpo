@@ -1,0 +1,32 @@
+version: "3"
+services:
+  web:
+    build:
+      context: ./site
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+  backend:
+    container_name: backend_tudolimpo
+    build:
+      context: ./backend_tudolimpo
+      dockerfile: Dockerfile
+    ports:
+      - "3333:3333"
+    command: yarn start
+  frontend:
+    container_name: frontend_tudolimpo
+    build:
+      context: ./front_servidor
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    command: yarn serve
+  booking:
+    container_name: frontend_booking
+    build:
+      context: ./booking
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    command: yarn serve

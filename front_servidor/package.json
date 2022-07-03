@@ -1,0 +1,80 @@
+{
+  "name": "front_servidor",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fullcalendar/core": "^4.3.0",
+    "@fullcalendar/daygrid": "^4.3.0",
+    "@fullcalendar/interaction": "^4.3.0",
+    "@fullcalendar/list": "^4.3.0",
+    "@fullcalendar/react": "^4.3.0",
+    "@fullcalendar/timegrid": "^4.3.0",
+    "@material-ui/core": "^4.9.13",
+    "@material-ui/icons": "^4.9.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@unform/core": "^2.1.0",
+    "@unform/web": "^2.1.0",
+    "axios": "^0.19.2",
+    "history": "^4.10.1",
+    "immer": "^6.0.5",
+    "material-table": "^1.57.2",
+    "moment": "^2.26.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-bootstrap-sweetalert": "^5.1.11",
+    "react-chartjs-2": "^2.9.0",
+    "react-datepicker": "^2.16.0",
+    "react-dom": "^16.13.1",
+    "react-google-charts": "^3.0.15",
+    "react-icons": "^3.10.0",
+    "react-input-mask": "^2.0.4",
+    "react-loading": "^2.0.3",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-select": "^3.1.0",
+    "react-select-plus": "^1.0.0-rc.3.patch12",
+    "react-toastify": "^6.0.1",
+    "react-top-loading-bar": "^1.2.0",
+    "reactotron-react-js": "^3.3.7",
+    "reactotron-redux": "^3.1.3",
+    "reactotron-redux-saga": "^4.2.3",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "socket.io-client": "^2.3.0",
+    "styled-components": "^5.1.0",
+    "yup": "^0.28.5"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "serve": "serve -s build -l 3000",
+    "global": "global add serve",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "prod": "serve -s build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-root-import": "^6.5.0",
+    "customize-cra": "^0.9.1",
+    "react-app-rewired": "^2.1.6"
+  }
+}
